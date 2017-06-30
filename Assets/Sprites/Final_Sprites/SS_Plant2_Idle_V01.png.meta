@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: fbaacee5b9f081a40b40e1ede2a37995
+timeCreated: 1461099341
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SS_Plant2_Idle_V01_0
+    21300002: SS_Plant2_Idle_V01_1
+    21300004: SS_Plant2_Idle_V01_2
+    21300006: SS_Plant2_Idle_V01_3
+    21300008: SS_Plant2_Idle_V01_4
+    21300010: SS_Plant2_Idle_V01_5
+    21300012: SS_Plant2_Idle_V01_6
+    21300014: SS_Plant2_Idle_V01_7
+    21300016: SS_Plant2_Idle_V01_8
+    21300018: SS_Plant2_Idle_V01_9
+    21300020: SS_Plant2_Idle_V01_10
+    21300022: SS_Plant2_Idle_V01_11
+    21300024: SS_Plant2_Idle_V01_12
+    21300026: SS_Plant2_Idle_V01_13
+    21300028: SS_Plant2_Idle_V01_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SS_Plant2_Idle_V01_0
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1455
+        width: 111
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.87912, y: 36.174194}
+        - {x: -40.87912, y: -20.825806}
+        - {x: -27.87912, y: -35.825806}
+        - {x: 14.12088, y: -35.825806}
+        - {x: 42.12088, y: -9.825806}
+        - {x: 42.12088, y: 36.174194}
+    - name: SS_Plant2_Idle_V01_1
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1455
+        width: 111
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40.020935, y: 36.174194}
+        - {x: 34.020935, y: 36.174194}
+        - {x: 32.020935, y: 34.174194}
+        - {x: 28.020935, y: 36.174194}
+        - {x: -40.979065, y: 36.174194}
+        - {x: -40.979065, y: -17.825806}
+        - {x: -14.979065, y: -35.825806}
+        - {x: 14.020935, y: -35.825806}
+        - {x: 37.020935, y: -14.825806}
+        - {x: 42.020935, y: -4.8258057}
+        - {x: 42.020935, y: 32.174194}
+    - name: SS_Plant2_Idle_V01_2
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 1457
+        width: 111
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.86621, y: 37.149414}
+        - {x: -40.86621, y: -20.850586}
+        - {x: -27.86621, y: -35.850586}
+        - {x: 42.13379, y: -35.850586}
+        - {x: 42.13379, y: 37.149414}
+    - name: SS_Plant2_Idle_V01_3
+      rect:
+        serializedVersion: 2
+        x: 2235
+        y: 1455
+        width: 111
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.01587, y: 36.174194}
+        - {x: -41.01587, y: -11.825806}
+        - {x: -26.01587, y: -35.825806}
+        - {x: 17.98413, y: -35.825806}
+        - {x: 41.98413, y: -22.825806}
+        - {x: 41.98413, y: 31.174194}
+        - {x: 39.98413, y: 36.174194}
+    - name: SS_Plant2_Idle_V01_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1039
+        width: 111
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.87912, y: 36.342285}
+        - {x: -40.87912, y: -27.657715}
+        - {x: -22.87912, y: -35.657715}
+        - {x: 30.12088, y: -35.657715}
+        - {x: 42.12088, y: -23.657715}
+        - {x: 42.12088, y: 36.342285}
+    - name: SS_Plant2_Idle_V01_5
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1039
+        width: 112
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.003906, y: 36.342285}
+        - {x: -41.003906, y: 30.342285}
+        - {x: -41.003906, y: -20.657715}
+        - {x: -11.003906, y: -35.657715}
+        - {x: 26.996094, y: -35.657715}
+        - {x: 42.996094, y: -15.657715}
+        - {x: 42.996094, y: 36.342285}
+    - name: SS_Plant2_Idle_V01_6
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 1039
+        width: 113
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.891113, y: 36.342285}
+        - {x: -41.891113, y: -16.657715}
+        - {x: -28.891113, y: -35.657715}
+        - {x: 18.108887, y: -35.657715}
+        - {x: 42.108887, y: -19.657715}
+        - {x: 42.108887, y: 36.342285}
+    - name: SS_Plant2_Idle_V01_7
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 1039
+        width: 114
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35.771362, y: 36.342285}
+        - {x: -37.228638, y: 36.342285}
+        - {x: -42.228638, y: 33.342285}
+        - {x: -42.228638, y: -21.657715}
+        - {x: -29.228638, y: -35.657715}
+        - {x: 16.771362, y: -35.657715}
+        - {x: 42.771362, y: -21.657715}
+        - {x: 42.771362, y: 24.342285}
+        - {x: 36.771362, y: 35.342285}
+    - name: SS_Plant2_Idle_V01_8
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 572
+        width: 113
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32.145737, y: 32.89392}
+        - {x: 23.145737, y: 35.89392}
+        - {x: 16.145737, y: 35.89392}
+        - {x: 9.145737, y: 36.89392}
+        - {x: -41.854263, y: 36.89392}
+        - {x: -41.854263, y: -15.106079}
+        - {x: -27.854263, y: -35.10608}
+        - {x: 15.145737, y: -35.10608}
+        - {x: 42.145737, y: -15.106079}
+        - {x: 42.145737, y: 36.89392}
+        - {x: 33.145737, y: 35.89392}
+    - name: SS_Plant2_Idle_V01_9
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 572
+        width: 112
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.216614, y: 37.39392}
+        - {x: -41.216614, y: 35.39392}
+        - {x: -41.216614, y: -12.606079}
+        - {x: -15.216614, y: -35.60608}
+        - {x: 22.783386, y: -35.60608}
+        - {x: 40.783386, y: -23.60608}
+        - {x: 42.783386, y: -13.606079}
+        - {x: 42.783386, y: 37.39392}
+    - name: SS_Plant2_Idle_V01_10
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 572
+        width: 113
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.891113, y: 37.39392}
+        - {x: -33.891113, y: 36.39392}
+        - {x: -41.891113, y: 32.39392}
+        - {x: -41.891113, y: -8.606079}
+        - {x: -37.891113, y: -12.606079}
+        - {x: -24.891113, y: -18.60608}
+        - {x: -10.891113, y: -35.60608}
+        - {x: 13.108887, y: -35.60608}
+        - {x: 42.108887, y: -14.606079}
+        - {x: 42.108887, y: 33.39392}
+        - {x: 36.108887, y: 37.39392}
+    - name: SS_Plant2_Idle_V01_11
+      rect:
+        serializedVersion: 2
+        x: 2235
+        y: 572
+        width: 111
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39.01587, y: 37.39392}
+        - {x: -41.01587, y: 31.39392}
+        - {x: -41.01587, y: -18.60608}
+        - {x: -13.015869, y: -35.60608}
+        - {x: 31.98413, y: -35.60608}
+        - {x: 41.98413, y: -28.60608}
+        - {x: 41.98413, y: 37.39392}
+    - name: SS_Plant2_Idle_V01_12
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 128
+        width: 111
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41.091843, y: 36.90983}
+        - {x: -41.091843, y: -15.090172}
+        - {x: -27.091843, y: -36.09017}
+        - {x: 22.908157, y: -36.09017}
+        - {x: 41.908157, y: -27.090172}
+        - {x: 41.908157, y: 36.90983}
+    - name: SS_Plant2_Idle_V01_13
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 128
+        width: 111
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.979065, y: 36.90983}
+        - {x: -40.979065, y: -23.090172}
+        - {x: -34.979065, y: -36.09017}
+        - {x: 16.020935, y: -36.09017}
+        - {x: 42.020935, y: -7.090172}
+        - {x: 42.020935, y: 34.90983}
+        - {x: 41.020935, y: 36.90983}
+    - name: SS_Plant2_Idle_V01_14
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 128
+        width: 111
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.915894, y: -15.090172}
+        - {x: -23.915894, y: -36.09017}
+        - {x: 18.084106, y: -36.09017}
+        - {x: 42.084106, y: -24.090172}
+        - {x: 42.084106, y: 36.90983}
+        - {x: -37.915894, y: 36.90983}
+        - {x: -40.915894, y: 31.909828}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

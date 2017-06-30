@@ -1,0 +1,362 @@
+fileFormatVersion: 2
+guid: 386a71b34869ccf4fab6fe9c73bd69bb
+timeCreated: 1461082517
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SS_Plant1_Grow_V01_0
+    21300002: SS_Plant1_Grow_V01_1
+    21300004: SS_Plant1_Grow_V01_2
+    21300006: SS_Plant1_Grow_V01_3
+    21300008: SS_Plant1_Grow_V01_4
+    21300010: SS_Plant1_Grow_V01_5
+    21300012: SS_Plant1_Grow_V01_6
+    21300014: SS_Plant1_Grow_V01_7
+    21300016: SS_Plant1_Grow_V01_8
+    21300018: SS_Plant1_Grow_V01_9
+    21300020: SS_Plant1_Grow_V01_10
+    21300022: SS_Plant1_Grow_V01_11
+    21300024: SS_Plant1_Grow_V01_12
+    21300026: SS_Plant1_Grow_V01_13
+    21300028: SS_Plant1_Grow_V01_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SS_Plant1_Grow_V01_0
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1453
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SS_Plant1_Grow_V01_1
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1453
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SS_Plant1_Grow_V01_2
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 1451
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: SS_Plant1_Grow_V01_3
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 1453
+        width: 57
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.423584, y: 20.699097}
+        - {x: -3.576416, y: 24.699097}
+        - {x: -17.576416, y: 24.699097}
+        - {x: -20.576416, y: 14.699097}
+        - {x: -20.576416, y: -18.300903}
+        - {x: -17.576416, y: -23.300903}
+        - {x: 19.423584, y: -23.300903}
+        - {x: 22.423584, y: -22.300903}
+        - {x: 22.423584, y: 3.6990967}
+    - name: SS_Plant1_Grow_V01_4
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1037
+        width: 71
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.340317, y: 32.367126}
+        - {x: -18.340317, y: 25.367126}
+        - {x: -26.340317, y: -3.6328735}
+        - {x: -26.340317, y: -26.632874}
+        - {x: -23.340317, y: -30.632874}
+        - {x: 26.659683, y: -30.632874}
+        - {x: 26.659683, y: 8.367126}
+        - {x: 12.659683, y: 32.367126}
+    - name: SS_Plant1_Grow_V01_5
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 1037
+        width: 90
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.390564, y: 30.867126}
+        - {x: -33.390564, y: 3.8671265}
+        - {x: -33.390564, y: -29.132874}
+        - {x: 33.609436, y: -29.132874}
+        - {x: 33.609436, y: 30.867126}
+    - name: SS_Plant1_Grow_V01_6
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 1037
+        width: 126
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.51538, y: 36.367126}
+        - {x: -30.51538, y: 34.367126}
+        - {x: -46.51538, y: -10.632874}
+        - {x: -46.51538, y: -27.632874}
+        - {x: -38.51538, y: -34.632874}
+        - {x: 10.484619, y: -34.632874}
+        - {x: 23.48462, y: -24.632874}
+        - {x: 47.48462, y: 8.367126}
+        - {x: 47.48462, y: 36.367126}
+    - name: SS_Plant1_Grow_V01_7
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 1037
+        width: 129
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.122314, y: 46.367126}
+        - {x: 9.122314, y: 37.367126}
+        - {x: -47.877686, y: -12.632874}
+        - {x: -47.877686, y: -41.632874}
+        - {x: -41.877686, y: -44.632874}
+        - {x: 9.122314, y: -44.632874}
+        - {x: 23.122314, y: -32.632874}
+        - {x: 48.122314, y: -8.632874}
+        - {x: 48.122314, y: 46.367126}
+    - name: SS_Plant1_Grow_V01_8
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 575
+        width: 146
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38.04634, y: 47.60666}
+        - {x: 18.04634, y: 47.60666}
+        - {x: -53.95366, y: -27.393341}
+        - {x: -53.95366, y: -47.39334}
+        - {x: 32.04634, y: -47.39334}
+        - {x: 51.04634, y: -10.393341}
+        - {x: 51.04634, y: 40.60666}
+        - {x: 44.04634, y: 45.60666}
+    - name: SS_Plant1_Grow_V01_9
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 570
+        width: 152
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 56.871887, y: 24.918762}
+        - {x: 56.871887, y: 57.918762}
+        - {x: 49.871887, y: 62.918762}
+        - {x: -13.128113, y: 62.918762}
+        - {x: -31.128113, y: 50.918762}
+        - {x: -56.128113, y: -31.081238}
+        - {x: -56.128113, y: -56.081238}
+        - {x: -42.128113, y: -62.081238}
+        - {x: 1.8718872, y: -62.081238}
+        - {x: 13.871887, y: -50.081238}
+        - {x: 13.871887, y: -47.081238}
+        - {x: 48.871887, y: 0.9187622}
+    - name: SS_Plant1_Grow_V01_10
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 567
+        width: 140
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29.77771, y: 63.206024}
+        - {x: -38.77771, y: 57.206024}
+        - {x: -36.77771, y: 53.206024}
+        - {x: -33.77771, y: 52.206024}
+        - {x: -29.77771, y: 51.206024}
+        - {x: -45.77771, y: 49.206024}
+        - {x: -51.77771, y: 46.206024}
+        - {x: -51.77771, y: -61.793976}
+        - {x: 27.22229, y: -61.793976}
+        - {x: 28.22229, y: -60.793976}
+        - {x: 50.22229, y: -14.793976}
+        - {x: 50.22229, y: 55.206024}
+        - {x: 13.22229, y: 63.206024}
+    - name: SS_Plant1_Grow_V01_11
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 570
+        width: 144
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.6223145, y: 56.418762}
+        - {x: -51.377686, y: 56.418762}
+        - {x: -52.377686, y: 28.418762}
+        - {x: -53.377686, y: 17.418762}
+        - {x: -53.377686, y: -50.581238}
+        - {x: -50.377686, y: -55.581238}
+        - {x: 15.622314, y: -55.581238}
+        - {x: 27.622314, y: -51.581238}
+        - {x: 53.622314, y: -0.5812378}
+        - {x: 53.622314, y: 28.418762}
+        - {x: 50.622314, y: 32.418762}
+    - name: SS_Plant1_Grow_V01_12
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 125
+        width: 147
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19.808762, y: 52.197098}
+        - {x: -37.19124, y: 52.197098}
+        - {x: -54.19124, y: 40.197098}
+        - {x: -54.19124, y: 23.197098}
+        - {x: -50.19124, y: 17.197098}
+        - {x: -54.19124, y: -32.802902}
+        - {x: -51.19124, y: -44.802902}
+        - {x: -47.19124, y: -51.802902}
+        - {x: 10.808762, y: -51.802902}
+        - {x: 32.80876, y: -45.802902}
+        - {x: 54.80876, y: -9.802902}
+        - {x: 54.80876, y: 30.197098}
+        - {x: 39.80876, y: 51.197098}
+    - name: SS_Plant1_Grow_V01_13
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 125
+        width: 150
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37.266296, y: 51.697098}
+        - {x: -55.266296, y: 33.697098}
+        - {x: -55.266296, y: 29.697098}
+        - {x: -48.266296, y: 26.697098}
+        - {x: -36.266296, y: 23.697098}
+        - {x: -29.266296, y: 21.697098}
+        - {x: -21.266296, y: 20.697098}
+        - {x: -19.266296, y: 20.697098}
+        - {x: -18.266296, y: 21.697098}
+        - {x: -16.266296, y: 21.697098}
+        - {x: -18.266296, y: 21.697098}
+        - {x: -27.266296, y: 11.697098}
+        - {x: -54.266296, y: -37.302902}
+        - {x: -39.266296, y: -51.302902}
+        - {x: 43.733704, y: -51.302902}
+        - {x: 56.733704, y: -40.302902}
+        - {x: 56.733704, y: 39.697098}
+        - {x: 46.733704, y: 51.697098}
+    - name: SS_Plant1_Grow_V01_14
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 127
+        width: 149
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11.871338, y: 51.67225}
+        - {x: -43.128662, y: 51.67225}
+        - {x: -55.128662, y: 36.67225}
+        - {x: -55.128662, y: 24.672249}
+        - {x: -53.128662, y: -48.32775}
+        - {x: -49.128662, y: -50.32775}
+        - {x: 35.871338, y: -50.32775}
+        - {x: 55.871338, y: -23.327751}
+        - {x: 55.871338, y: 34.67225}
+        - {x: 32.871338, y: 49.67225}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
