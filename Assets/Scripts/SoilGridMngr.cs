@@ -24,6 +24,9 @@ public class SoilGridMngr : MonoBehaviour {
     }
 
     void Update() {
+		if (isConnectedToElement == true) {
+			element.GetComponent<Element> ().highlighted = true;
+		}
         if (Input.touchCount > 0 || pc == true)
         {
 

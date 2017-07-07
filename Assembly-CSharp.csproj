@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\BarTileAnimate.cs" />
      <Compile Include="Assets\Scripts\DrawLine.cs" />
      <Compile Include="Assets\Scripts\Element.cs" />
+     <Compile Include="Assets\Scripts\ElementManager.cs" />
      <Compile Include="Assets\Scripts\FastFwd.cs" />
      <Compile Include="Assets\Scripts\GroundGrid.cs" />
      <Compile Include="Assets\Scripts\GroundGridManager.cs" />

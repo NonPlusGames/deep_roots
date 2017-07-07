@@ -87,14 +87,16 @@ public class DrawLine : MonoBehaviour
 						GetComponent<SoilGridMngr> ().isConnectedToElement = isConnectedToElement;
 						element = rayHit.collider.gameObject;
 						GetComponent<SoilGridMngr> ().element = element;
-						element.GetComponent<Element> ().spawnHighlight ();
+						//element.GetComponent<Element> ().spawnHighlight ();
+						element.GetComponent<Element> ().highlighted=true;
 						GetComponent<SoilGridMngr> ().startDraw = false;
 					} else if ((hasPlant == 2 || hasPlant == 3) && rayHit.collider.GetComponent<Element> ().elementType == "hydrogen") {
 						isConnectedToElement = true;
 						GetComponent<SoilGridMngr> ().isConnectedToElement = isConnectedToElement;
 						element = rayHit.collider.gameObject;
 						GetComponent<SoilGridMngr> ().element = element;
-						element.GetComponent<Element> ().spawnHighlight ();
+						//element.GetComponent<Element> ().spawnHighlight ();
+						element.GetComponent<Element> ().highlighted=true;
 						GetComponent<SoilGridMngr> ().startDraw = false;
 					} else {
 						deleteLine();
