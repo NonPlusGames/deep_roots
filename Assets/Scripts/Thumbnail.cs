@@ -116,69 +116,69 @@ public class Thumbnail : MonoBehaviour {
 
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(transform.position.x, -1000), 1000);
                 Debug.DrawLine(transform.position, new Vector2(transform.position.x, -1000), Color.cyan);
-				if (hit)
-                {
+				if (hit) {
 					hitConnectedObject = hit.collider.gameObject;
-                    if (hit.collider.GetComponent<Collider2D>().tag == "grid" && hit.collider.GetComponent<Collider2D>().GetComponent<GroundGridManager>().isConnected == 0)
-					{
-                        lineRenderer.SetPosition(0, gameObject.transform.position);
-                        lineRenderer.SetPosition(1, hit.collider.transform.position);
-						connectedObject=hit.collider.GetComponent<Collider2D> ().gameObject;
+				}
+				if (hitConnectedObject.GetComponent<Collider2D>().tag == "grid" && hitConnectedObject.GetComponent<Collider2D>().GetComponent<GroundGridManager>().isConnected == 0)
+				{
+                    lineRenderer.SetPosition(0, gameObject.transform.position);
+					lineRenderer.SetPosition(1, hitConnectedObject.transform.position);
+					connectedObject=hitConnectedObject.GetComponent<Collider2D> ().gameObject;
 
-						lineRenderer.material.mainTextureScale = new Vector2((int)Vector2.Distance(gameObject.transform.position,  hit.collider.transform.position), 1);
-						i+=-.05f;
-						lineRenderer.material.SetTextureOffset("_MainTex", new Vector2(i, 0));
-						lineRenderer.material.mainTexture.wrapMode = TextureWrapMode.Repeat;
+					lineRenderer.material.mainTextureScale = new Vector2((int)Vector2.Distance(gameObject.transform.position,  hitConnectedObject.transform.position), 1);
+					i+=-.05f;
+					lineRenderer.material.SetTextureOffset("_MainTex", new Vector2(i, 0));
+					lineRenderer.material.mainTexture.wrapMode = TextureWrapMode.Repeat;
 
-						connectedObject.GetComponent<GroundGridManager> ().setMouseOver ();
-						if ((touch.phase == TouchPhase.Ended || Input.GetMouseButtonUp (0)) && gameObject.tag == "grass" && connectedObject.GetComponent<GroundGridManager> ().hasPlant == 0) {  
-							lineRenderer.SetPosition (0, Vector2.zero);
-							lineRenderer.SetPosition (1, Vector2.zero);
-							if (int.Parse ("" + resources2.text) >= 1) {
-								Instantiate (gameObject, originalPos, Quaternion.identity);
+					connectedObject.GetComponent<GroundGridManager> ().setMouseOver ();
+					if ((touch.phase == TouchPhase.Ended || Input.GetMouseButtonUp (0)) && gameObject.tag == "grass" && connectedObject.GetComponent<GroundGridManager> ().hasPlant == 0) {  
+						lineRenderer.SetPosition (0, Vector2.zero);
+						lineRenderer.SetPosition (1, Vector2.zero);
+						if (int.Parse ("" + resources2.text) >= 1) {
+							Instantiate (gameObject, originalPos, Quaternion.identity);
 
-								resources2.text = "" + (int.Parse ("" + resources2.text) - 1);
-								connectedObject.GetComponent<GroundGridManager> ().createGrass ();
+							resources2.text = "" + (int.Parse ("" + resources2.text) - 1);
+							connectedObject.GetComponent<GroundGridManager> ().createGrass ();
 
-								another = false;
-								planting=false;
-								Destroy (gameObject);
-								deHighLightElements ();
-							}
+							another = false;
+							planting=false;
+							Destroy (gameObject);
+							deHighLightElements ();
 						}
-						if ((touch.phase == TouchPhase.Ended || Input.GetMouseButtonUp (0)) && gameObject.tag == "shrub" && connectedObject.GetComponent<GroundGridManager> ().hasPlant == 0) {
-							lineRenderer.SetPosition (0, Vector2.zero);
-							lineRenderer.SetPosition (1, Vector2.zero);
-							if (int.Parse ("" + resources2.text) >= 1 && int.Parse ("" + resources3.text) >= 1) {
-								Instantiate (gameObject, originalPos, Quaternion.identity);
+					}
+					if ((touch.phase == TouchPhase.Ended || Input.GetMouseButtonUp (0)) && gameObject.tag == "shrub" && connectedObject.GetComponent<GroundGridManager> ().hasPlant == 0) {
+						lineRenderer.SetPosition (0, Vector2.zero);
+						lineRenderer.SetPosition (1, Vector2.zero);
+						if (int.Parse ("" + resources2.text) >= 1 && int.Parse ("" + resources3.text) >= 1) {
+							Instantiate (gameObject, originalPos, Quaternion.identity);
 
-								resources2.text = "" + (int.Parse ("" + resources2.text) - 1);
-								resources3.text = "" + (int.Parse ("" + resources3.text) - 1);
-								connectedObject.GetComponent<GroundGridManager> ().createShrub ();
-								another = false;
-								planting=false;
-								Destroy (gameObject);
-								deHighLightElements ();
-							}
+							resources2.text = "" + (int.Parse ("" + resources2.text) - 1);
+							resources3.text = "" + (int.Parse ("" + resources3.text) - 1);
+							connectedObject.GetComponent<GroundGridManager> ().createShrub ();
+							another = false;
+							planting=false;
+							Destroy (gameObject);
+							deHighLightElements ();
 						}
-						if ((touch.phase == TouchPhase.Ended || Input.GetMouseButtonUp (0)) && gameObject.tag == "tree" && connectedObject.GetComponent<GroundGridManager> ().hasPlant == 0) {
-							lineRenderer.SetPosition (0, Vector2.zero);
-							lineRenderer.SetPosition (1, Vector2.zero);
-							if (int.Parse ("" + resources4.text) >= 1 && int.Parse ("" + resources3.text) >= 1 && int.Parse ("" + resources2.text) >= 1) {
-								Instantiate (gameObject, originalPos, Quaternion.identity);
+					}
+					if ((touch.phase == TouchPhase.Ended || Input.GetMouseButtonUp (0)) && gameObject.tag == "tree" && connectedObject.GetComponent<GroundGridManager> ().hasPlant == 0) {
+						lineRenderer.SetPosition (0, Vector2.zero);
+						lineRenderer.SetPosition (1, Vector2.zero);
+						if (int.Parse ("" + resources4.text) >= 1 && int.Parse ("" + resources3.text) >= 1 && int.Parse ("" + resources2.text) >= 1) {
+							Instantiate (gameObject, originalPos, Quaternion.identity);
 
-								resources3.text = "" + (int.Parse ("" + resources3.text) - 1);
-								resources4.text = "" + (int.Parse ("" + resources4.text) - 1);
-								resources2.text = "" + (int.Parse ("" + resources2.text) - 1);
-								connectedObject.GetComponent<Collider2D> ().GetComponent<GroundGridManager> ().createTree ();
-								another = false;
-								planting=false;
-								Destroy (gameObject);
-								deHighLightElements ();
-							}
+							resources3.text = "" + (int.Parse ("" + resources3.text) - 1);
+							resources4.text = "" + (int.Parse ("" + resources4.text) - 1);
+							resources2.text = "" + (int.Parse ("" + resources2.text) - 1);
+							connectedObject.GetComponent<Collider2D> ().GetComponent<GroundGridManager> ().createTree ();
+							another = false;
+							planting=false;
+							Destroy (gameObject);
+							deHighLightElements ();
 						}
-                    }
+					}
                 }
+                
 
                 if (touch.phase == TouchPhase.Ended || Input.GetMouseButtonUp(0))
                 {

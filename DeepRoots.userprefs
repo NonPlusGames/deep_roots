@@ -1,0 +1,20 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GroundGridManager.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Thumbnail.cs" Line="145" Column="10" />
+      <File FileName="Assets\Scripts\GroundGridManager.cs" Line="34" Column="2" />
+      <File FileName="Assets\Scripts\ResourceGain.cs" Line="11" Column="36" />
+      <File FileName="Assets\Scripts\SoilGridMngr.cs" Line="28" Column="56" />
+      <File FileName="Assets\Scripts\SoilGrid.cs" Line="6" Column="2" />
+      <File FileName="Assets\Scripts\ElementManager.cs" Line="10" Column="8" />
+      <File FileName="Assets\Scripts\Element.cs" Line="36" Column="3" />
+      <File FileName="Assets\Scripts\DrawLine.cs" Line="62" Column="2" />
+      <File FileName="Assets\Scripts\GroundGrid.cs" Line="9" Column="36" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
