@@ -32,6 +32,7 @@ public class GroundGridManager : MonoBehaviour {
 	public GameObject rootStub2;
 	public GameObject oxygenSprite;
 	public GameObject spawnedOxygen;
+	public GameObject carbonPrefab;
 	bool grow=true;
 
 	// Update is called once per frame
@@ -49,7 +50,9 @@ public class GroundGridManager : MonoBehaviour {
 		rend.color=new Color(rend.color.r, rend.color.g, rend.color.b, .2f);
 	}
 	void Update () {
-		
+		if (connectedObject.GetComponent<SoilGridMngr> ().hasDepletedElement == true) {
+			destroySelf ();
+		}
         if (connectedObject.GetComponent<SoilGridMngr>().isConnectedToElement)
 		{
 			isConnected=1;
@@ -110,7 +113,8 @@ public class GroundGridManager : MonoBehaviour {
 		plant="grow";
 		idle="BG";
 		hasPlant=1;
-        Instantiate(rootStub2, transform.position+new Vector3(0, -1, 0), Quaternion.identity);
+		GameObject root=(GameObject)Instantiate(rootStub2, transform.position + new Vector3(0, -1, 0), Quaternion.identity);
+		root.transform.parent = gameObject.transform;
         rootObject.GetComponent<DrawLine>().hasPlant = hasPlant;
         rootObject.GetComponent<SoilGridMngr>().hasPlant = hasPlant;
 
@@ -123,7 +127,8 @@ public class GroundGridManager : MonoBehaviour {
 		idle="BGIdle";
 		hasPlant=3;
 		score++;
-        Instantiate(rootStub2, transform.position + new Vector3(0, -1, 0), Quaternion.identity);
+		GameObject root=(GameObject)Instantiate(rootStub2, transform.position + new Vector3(0, -1, 0), Quaternion.identity);
+		root.transform.parent = gameObject.transform;
         rootObject.GetComponent<DrawLine>().hasPlant = hasPlant;
         rootObject.GetComponent<SoilGridMngr>().hasPlant = hasPlant;
     }
@@ -133,7 +138,8 @@ public class GroundGridManager : MonoBehaviour {
 		plant="ShrubGrow";
 		idle="BGshrub";
 		hasPlant=2;
-        Instantiate(rootStub, transform.position + new Vector3(0, -1, 0), Quaternion.identity);
+		GameObject root=(GameObject)Instantiate(rootStub, transform.position + new Vector3(0, -1, 0), Quaternion.identity);
+		root.transform.parent = gameObject.transform;
         rootObject.GetComponent<DrawLine>().hasPlant = hasPlant;
         rootObject.GetComponent<SoilGridMngr>().hasPlant = hasPlant;
 
@@ -193,5 +199,10 @@ public class GroundGridManager : MonoBehaviour {
 	public void startIdle(){
 		grow = false;
 		anim.SetBool (plant, false);
+	}
+	public void destroySelf(){
+		Instantiate(carbonPrefab, transform.position + new Vector3(0, -1, 26.1f), Quaternion.Euler(0,0,90));
+		connectedObject.GetComponent<SoilGridMngr> ().destroySelf ();
+		Destroy (gameObject);
 	}
 }

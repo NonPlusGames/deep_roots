@@ -98,5 +98,9 @@ public class SoilGridMngr : MonoBehaviour {
 			yield return null;
 		}
 	}
+	public void destroySelf(){
+		GetComponent<DrawLine> ().deleteLine();
+		Destroy (gameObject);
+	}
 
 }

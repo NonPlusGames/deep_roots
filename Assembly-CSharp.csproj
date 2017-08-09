@@ -48,6 +48,7 @@
      <Compile Include="Assets\Pixelplacement\iTweenPath\iTweenPath.cs" />
      <Compile Include="Assets\Scripts\Bar.cs" />
      <Compile Include="Assets\Scripts\BarTileAnimate.cs" />
+     <Compile Include="Assets\Scripts\Carbon.cs" />
      <Compile Include="Assets\Scripts\DrawLine.cs" />
      <Compile Include="Assets\Scripts\Element.cs" />
      <Compile Include="Assets\Scripts\ElementManager.cs" />

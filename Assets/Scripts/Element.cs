@@ -21,12 +21,10 @@ public class Element : MonoBehaviour {
 		if (elementType == "carbon") {
 			spawnedElement = (GameObject)Instantiate (nitrogenSprite, new Vector3 (transform.position.x, transform.position.y, transform.position.z - 1), Quaternion.identity);
 			spawnedElement.transform.parent = gameObject.transform;
-			elementManager.GetComponent <ElementManager> ().nitrogenList.Add (gameObject);
 		}
 		if (elementType == "hydrogen") {
 			spawnedElement = (GameObject)Instantiate (waterSprite, new Vector3 (transform.position.x, transform.position.y, transform.position.z - 1), Quaternion.identity);
 			spawnedElement.transform.parent = gameObject.transform;
-			elementManager.GetComponent <ElementManager> ().waterList.Add (gameObject);
 		}
 		spawnedHighlight = (GameObject)Instantiate (highlight, new Vector3 (transform.position.x, transform.position.y, transform.position.z + 1), Quaternion.identity);
 		spawnedHighlight.transform.parent = gameObject.transform;

@@ -80,7 +80,7 @@ public class DrawLine : MonoBehaviour
             }
             if (Physics.Raycast(ray, out rayHit, 1000f))
             {
-				if ((Input.GetMouseButton(0)||touch.phase== TouchPhase.Moved|| Input.GetMouseButtonUp(0) || touch.phase == TouchPhase.Ended) && rayHit.collider.tag == "element"&&(deletingLine==false))
+				if ((Input.GetMouseButton(0)||touch.phase== TouchPhase.Moved|| Input.GetMouseButtonUp(0) || touch.phase == TouchPhase.Ended) && (rayHit.collider.tag == "nitrogen"||rayHit.collider.tag == "water")&&(deletingLine==false))
                 {
 					if ((hasPlant == 1 || hasPlant == 3) &&rayHit.collider.GetComponent<Element> ().elementType == "carbon") {
 						isConnectedToElement = true;
