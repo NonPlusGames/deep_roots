@@ -27,9 +27,11 @@ public class Thumbnail : MonoBehaviour {
         selected = false;
         another = false;
         lineRenderer = GetComponent<LineRenderer>();
+		hitConnectedObject = new GameObject ();
+		hitConnectedObject.AddComponent <BoxCollider2D>();
     }
 
-	void FixedUpdate () {
+	void Update () {
         checkMove();
 	}
 
@@ -59,48 +61,38 @@ public class Thumbnail : MonoBehaviour {
 	}
 		
 	void deHighLightElements(){
-		if (gameObject.tag == "shrub") {
-			foreach (GameObject item in elementManager.GetComponent <ElementManager> ().waterList)
-			{
-				item.GetComponent<Element> ().highlighted = false;
-			}
+
+		foreach (GameObject item in elementManager.GetComponent <ElementManager> ().nitrogenList)
+		{
+			item.GetComponent<Element> ().highlighted = false;
 		}
-		if (gameObject.tag == "grass") {
-			foreach (GameObject item in elementManager.GetComponent <ElementManager> ().nitrogenList)
-			{
-				item.GetComponent<Element> ().highlighted = false;
-			}
-		}
-		if (gameObject.tag == "tree") {
-			foreach (GameObject item in elementManager.GetComponent <ElementManager> ().nitrogenList)
-			{
-				item.GetComponent<Element> ().highlighted = false;
-			}
-			foreach (GameObject item in elementManager.GetComponent <ElementManager> ().waterList)
-			{
-				item.GetComponent<Element> ().highlighted = false;
-			}
+
+		foreach (GameObject item in elementManager.GetComponent <ElementManager> ().waterList)
+		{
+			item.GetComponent<Element> ().highlighted = false;
 		}
 	}	
     void checkMove()
     {
 
 		if ((Input.touchCount > 0 || pc == true)) {
-
 			Ray ray1 = Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit rayHit1 = new RaycastHit();
+
 			if (Input.touchCount > 0)
 			{
 				touch = Input.GetTouch (0);
 				ray1 = Camera.main.ScreenPointToRay (touch.position);
 			}
+
 			if (Physics.Raycast (ray1, out rayHit1, 1000f)) {
 				
 				if ((Input.GetMouseButtonDown (0) || (touch.phase==TouchPhase.Began && Input.touchCount > 0)) && (rayHit1.collider.tag==gameObject.tag)&& another == false) {
 					selected = true;
 				}
 			}
-            if (selected == true)
+           
+			if (selected == true)
             {
                 another = true;
 				highLightElements ();
@@ -116,33 +108,29 @@ public class Thumbnail : MonoBehaviour {
 
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(transform.position.x, -1000), 1000);
                 Debug.DrawLine(transform.position, new Vector2(transform.position.x, -1000), Color.cyan);
+
 				if (hit) {
 					hitConnectedObject = hit.collider.gameObject;
 				}
+
 				if (hitConnectedObject.GetComponent<Collider2D>().tag == "grid" && hitConnectedObject.GetComponent<Collider2D>().GetComponent<GroundGridManager>().isConnected == 0)
 				{
                     lineRenderer.SetPosition(0, gameObject.transform.position);
 					lineRenderer.SetPosition(1, hitConnectedObject.transform.position);
 					connectedObject=hitConnectedObject.GetComponent<Collider2D> ().gameObject;
-
 					lineRenderer.material.mainTextureScale = new Vector2((int)Vector2.Distance(gameObject.transform.position,  hitConnectedObject.transform.position), 1);
 					i+=-.05f;
 					lineRenderer.material.SetTextureOffset("_MainTex", new Vector2(i, 0));
 					lineRenderer.material.mainTexture.wrapMode = TextureWrapMode.Repeat;
-
 					connectedObject.GetComponent<GroundGridManager> ().setMouseOver ();
 					if ((touch.phase == TouchPhase.Ended || Input.GetMouseButtonUp (0)) && gameObject.tag == "grass" && connectedObject.GetComponent<GroundGridManager> ().hasPlant == 0) {  
 						lineRenderer.SetPosition (0, Vector2.zero);
 						lineRenderer.SetPosition (1, Vector2.zero);
 						if (int.Parse ("" + resources2.text) >= 1) {
-							Instantiate (gameObject, originalPos, Quaternion.identity);
-
 							resources2.text = "" + (int.Parse ("" + resources2.text) - 1);
 							connectedObject.GetComponent<GroundGridManager> ().createGrass ();
-
 							another = false;
 							planting=false;
-							Destroy (gameObject);
 							deHighLightElements ();
 						}
 					}
@@ -150,14 +138,11 @@ public class Thumbnail : MonoBehaviour {
 						lineRenderer.SetPosition (0, Vector2.zero);
 						lineRenderer.SetPosition (1, Vector2.zero);
 						if (int.Parse ("" + resources2.text) >= 1 && int.Parse ("" + resources3.text) >= 1) {
-							Instantiate (gameObject, originalPos, Quaternion.identity);
-
 							resources2.text = "" + (int.Parse ("" + resources2.text) - 1);
 							resources3.text = "" + (int.Parse ("" + resources3.text) - 1);
 							connectedObject.GetComponent<GroundGridManager> ().createShrub ();
 							another = false;
 							planting=false;
-							Destroy (gameObject);
 							deHighLightElements ();
 						}
 					}
@@ -165,35 +150,26 @@ public class Thumbnail : MonoBehaviour {
 						lineRenderer.SetPosition (0, Vector2.zero);
 						lineRenderer.SetPosition (1, Vector2.zero);
 						if (int.Parse ("" + resources4.text) >= 1 && int.Parse ("" + resources3.text) >= 1 && int.Parse ("" + resources2.text) >= 1) {
-							Instantiate (gameObject, originalPos, Quaternion.identity);
-
 							resources3.text = "" + (int.Parse ("" + resources3.text) - 1);
 							resources4.text = "" + (int.Parse ("" + resources4.text) - 1);
 							resources2.text = "" + (int.Parse ("" + resources2.text) - 1);
 							connectedObject.GetComponent<Collider2D> ().GetComponent<GroundGridManager> ().createTree ();
 							another = false;
 							planting=false;
-							Destroy (gameObject);
 							deHighLightElements ();
 						}
 					}
                 }
-                
-
                 if (touch.phase == TouchPhase.Ended || Input.GetMouseButtonUp(0))
                 {
                     another = false;
                     selected = false;
-                    transform.position = originalPos;
                     lineRenderer.SetPosition(0, Vector2.zero);
                     lineRenderer.SetPosition(1, Vector2.zero);
+					deHighLightElements ();
+					Instantiate (gameObject, originalPos, Quaternion.identity);
+					Destroy (gameObject);
                 }
-				if (selected == false) {
-					another = false;
-					transform.position = originalPos;
-					lineRenderer.SetPosition(0, Vector2.zero);
-					lineRenderer.SetPosition(1, Vector2.zero);
-				}
             }
         }
     }

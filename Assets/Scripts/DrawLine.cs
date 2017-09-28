@@ -16,16 +16,26 @@ public class DrawLine : MonoBehaviour
     Touch touch;
 	LineRenderer lineRenderer;
     public int hasPlant;
+	public string platform = "pc";
+
 
 
 
     void Start()
     {
         rootList.Clear();
+		#if UNITY_ANDROID
+		platform="android";
+		#endif
+		#if UNITY_EDITOR
+		platform="pc";
+		#endif
+		Debug.Log (platform);
     }
 
     void Update()
     {
+		
 		if (!(newRoot == null)&&rootList!=null) {
 			foreach (GameObject rootObject in rootList)
 			{
@@ -80,14 +90,19 @@ public class DrawLine : MonoBehaviour
             }
             if (Physics.Raycast(ray, out rayHit, 1000f))
             {
-				if ((Input.GetMouseButton(0)||touch.phase== TouchPhase.Moved|| Input.GetMouseButtonUp(0) || touch.phase == TouchPhase.Ended) && (rayHit.collider.tag == "nitrogen"||rayHit.collider.tag == "water")&&(deletingLine==false))
+				
+				if(Input.GetMouseButtonDown(0)||(touch.phase== TouchPhase.Began&&platform=="android")){
+					Debug.Log (touch.phase);
+					deleteLine ();
+				}
+				if ((Input.GetMouseButton(0)||touch.phase== TouchPhase.Moved|| Input.GetMouseButtonUp(0) || touch.phase == TouchPhase.Ended) && (rayHit.collider.tag == "nitrogen"||rayHit.collider.tag == "water" || rayHit.collider.tag == "carbon")&&(deletingLine==false))
                 {
-					if ((hasPlant == 1 || hasPlant == 3) &&rayHit.collider.GetComponent<Element> ().elementType == "carbon") {
+					
+					if ((hasPlant == 1 || hasPlant == 3) &&rayHit.collider.GetComponent<Element> ().elementType == "carbon" ) {
 						isConnectedToElement = true;
 						GetComponent<SoilGridMngr> ().isConnectedToElement = isConnectedToElement;
 						element = rayHit.collider.gameObject;
 						GetComponent<SoilGridMngr> ().element = element;
-						//element.GetComponent<Element> ().spawnHighlight ();
 						element.GetComponent<Element> ().highlighted=true;
 						GetComponent<SoilGridMngr> ().startDraw = false;
 					} else if ((hasPlant == 2 || hasPlant == 3) && rayHit.collider.GetComponent<Element> ().elementType == "hydrogen") {
@@ -95,11 +110,11 @@ public class DrawLine : MonoBehaviour
 						GetComponent<SoilGridMngr> ().isConnectedToElement = isConnectedToElement;
 						element = rayHit.collider.gameObject;
 						GetComponent<SoilGridMngr> ().element = element;
-						//element.GetComponent<Element> ().spawnHighlight ();
 						element.GetComponent<Element> ().highlighted=true;
 						GetComponent<SoilGridMngr> ().startDraw = false;
 					} else {
-						deleteLine();
+						deleteLine ();
+						Debug.Log ("deleted by element");
                         sunlight.text = "" + (int.Parse("" + sunlight.text) - 1);
                         GetComponent<SoilGridMngr>().startDraw = false;
 					}
@@ -111,8 +126,9 @@ public class DrawLine : MonoBehaviour
 					newRoot.GetComponent<Renderer> ().enabled = false;
                     rootList.Add(newRoot);
                 }
-                else if (!(rayHit.collider.gameObject == newRoot) && !isConnectedToElement)
+				else if ((!(rayHit.collider.gameObject == newRoot) && !isConnectedToElement))
                 {
+					Debug.Log ("deleted by self");
                     deleteLine();
                     GetComponent<SoilGridMngr>().startDraw = false;
                 }

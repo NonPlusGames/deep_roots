@@ -12,6 +12,9 @@ TagManager:
   - tree
   - shrub
   - Rock
+  - nitrogen
+  - water
+  - carbon
   layers:
   - Default
   - TransparentFX

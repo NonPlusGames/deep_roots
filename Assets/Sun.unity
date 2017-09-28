@@ -236,7 +236,7 @@ GameObject:
   - 54: {fileID: 55551100}
   m_Layer: 0
   m_Name: carbon
-  m_TagString: element
+  m_TagString: carbon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -703,7 +703,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 167442868}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -873,6 +873,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 119088, guid: eddef67eaea86174ca135d2b53004c14, type: 2}
+      propertyPath: m_TagString
+      value: carbon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eddef67eaea86174ca135d2b53004c14, type: 2}
   m_IsPrefabParent: 0
@@ -991,7 +995,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 201469505}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1820,8 +1824,8 @@ GameObject:
   - 54: {fileID: 351071811}
   - 114: {fileID: 351071810}
   m_Layer: 0
-  m_Name: Sphere (8)
-  m_TagString: element
+  m_Name: Nitrogen
+  m_TagString: nitrogen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1837,7 +1841,7 @@ Transform:
   m_LocalScale: {x: 1.5758356, y: 1.5508193, z: 1}
   m_Children: []
   m_Father: {fileID: 934615025}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!114 &351071810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3768,8 +3772,8 @@ GameObject:
   - 54: {fileID: 725759829}
   - 114: {fileID: 725759828}
   m_Layer: 0
-  m_Name: Sphere (16)
-  m_TagString: element
+  m_Name: Nitrogen
+  m_TagString: nitrogen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3785,7 +3789,7 @@ Transform:
   m_LocalScale: {x: 1.5758356, y: 1.5508193, z: 1}
   m_Children: []
   m_Father: {fileID: 934615025}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &725759828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4318,8 +4322,8 @@ GameObject:
   - 54: {fileID: 822963217}
   - 114: {fileID: 822963216}
   m_Layer: 0
-  m_Name: Sphere (24)
-  m_TagString: element
+  m_Name: water
+  m_TagString: water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4863,7 +4867,7 @@ GameObject:
   - 54: {fileID: 852066030}
   m_Layer: 0
   m_Name: carbon
-  m_TagString: element
+  m_TagString: carbon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5174,10 +5178,10 @@ Transform:
   m_LocalPosition: {x: 11, y: 0.6, z: 77.94531}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1666001320}
   - {fileID: 351071809}
   - {fileID: 725759827}
   - {fileID: 1677351039}
+  - {fileID: 1666001320}
   - {fileID: 1136165863}
   - {fileID: 1550972614}
   - {fileID: 822963215}
@@ -5841,8 +5845,8 @@ GameObject:
   - 54: {fileID: 1136165865}
   - 114: {fileID: 1136165864}
   m_Layer: 0
-  m_Name: Sphere (23)
-  m_TagString: element
+  m_Name: water
+  m_TagString: water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7277,7 +7281,7 @@ GameObject:
   - 54: {fileID: 1421963707}
   m_Layer: 0
   m_Name: carbon
-  m_TagString: element
+  m_TagString: carbon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7839,8 +7843,8 @@ GameObject:
   - 54: {fileID: 1550972616}
   - 114: {fileID: 1550972615}
   m_Layer: 0
-  m_Name: Sphere (27)
-  m_TagString: element
+  m_Name: water
+  m_TagString: water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8300,7 +8304,7 @@ GameObject:
   - 54: {fileID: 1651990867}
   m_Layer: 0
   m_Name: carbon (1)
-  m_TagString: element
+  m_TagString: carbon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8413,8 +8417,8 @@ GameObject:
   - 54: {fileID: 1666001316}
   - 114: {fileID: 1666001315}
   m_Layer: 0
-  m_Name: Sphere (13)
-  m_TagString: element
+  m_Name: water
+  m_TagString: water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8511,7 +8515,7 @@ Transform:
   m_LocalScale: {x: 1.4112442, y: 1.3862294, z: 1}
   m_Children: []
   m_Father: {fileID: 934615025}
-  m_RootOrder: 0
+  m_RootOrder: 3
 --- !u!1 &1669426099
 GameObject:
   m_ObjectHideFlags: 0
@@ -8642,8 +8646,8 @@ GameObject:
   - 54: {fileID: 1677351041}
   - 114: {fileID: 1677351040}
   m_Layer: 0
-  m_Name: Sphere (22)
-  m_TagString: element
+  m_Name: Nitrogen
+  m_TagString: nitrogen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8659,7 +8663,7 @@ Transform:
   m_LocalScale: {x: 1.5758356, y: 1.5508193, z: 1}
   m_Children: []
   m_Father: {fileID: 934615025}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!114 &1677351040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9388,7 +9392,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1777029639}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -10442,7 +10446,7 @@ GameObject:
   - 54: {fileID: 2027579775}
   m_Layer: 0
   m_Name: carbon
-  m_TagString: element
+  m_TagString: carbon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
