@@ -6,20 +6,17 @@ public class DrawLine : MonoBehaviour
 {
     private bool isMousePressed;
     public bool isConnectedToElement = false;
-	public bool deletingLine=false;
+    public bool deletingLine=false;
     public GameObject element;
     private GameObject newRoot;
     public GameObject rootPrefab;
     public List<GameObject> rootList = new List<GameObject>();
-	public Text sunlight;
+    public Text sunlight;
     bool pc = true;
     Touch touch;
-	LineRenderer lineRenderer;
+    LineRenderer lineRenderer;
     public int hasPlant;
-	public string platform = "pc";
-
-
-
+    public string platform = "pc";
 
     void Start()
     {
